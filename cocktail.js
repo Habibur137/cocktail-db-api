@@ -36,7 +36,10 @@ const displaySingleCocktail = (cocktail) => {
     div.innerHTML = `
         <img src="${cocktail.strDrinkThumb}" />
         <h3>${cocktail.strDrink}</h3>
+        <p>${cocktail.strCategory}</p>
+        <p>${cocktail.strAlcoholic}</p>
         <p>${cocktail.strInstructions}</p>
+        <p>${cocktail.strGlass}</p>
     `
     item.append(div)
 }
