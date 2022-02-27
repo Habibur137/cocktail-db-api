@@ -1,3 +1,6 @@
+body{
+    background-color: rgba(223, 218, 218, 0.713);
+}
 #root{
     width: 1140px;
     margin: 0 auto;
@@ -5,13 +8,25 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
 }
+#item{
+    width: 350px;
+    margin: 0 auto;
+    padding: 10px;
+}
 .cocktail-item{
     padding: 10px;
     border-radius: 10px;
-    background: linear-gradient(#111111, #ebdde9, #2b2c2c);
-    color:aliceblue;
+    background: #fff;
 }
 .cocktail-item img{
     width: 100%;
     height: auto;
+}
+.cocktail-item button{
+    padding: 7px 20px;
+    border-radius: 5px;
+    background: rgb(94, 238, 207);
+    border: none;
+    font-size: 17px;
+    color:#fff;
 }
