@@ -3,7 +3,7 @@ const loadCocktailData = () => {
     .then(res => res.json())
     .then(data => displayCocktailData(data.drinks))
 }
-loadCocktailData()
+loadCocktailData() 
 
 const displayCocktailData = (cocktails) => {
     cocktails.forEach(cocktail => {
