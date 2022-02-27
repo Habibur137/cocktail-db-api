@@ -6,7 +6,16 @@ const loadCocktailData = () => {
 loadCocktailData() 
 
 const displayCocktailData = (cocktails) => {
+    console.log(cocktails)
+    const root = document.getElementById('root')
     cocktails.forEach(cocktail => {
-        console.log(cocktail)
+        const div = document.createElement('div')
+        div.className = 'cocktail-item'
+        div.innerHTML = `
+            <img src="${cocktail.strDrinkThumb}" />
+            <h3>${cocktail.strDrink}</h3>
+            <p>${cocktail.strInstructions}</p>
+        `
+        root.append(div)
     });
 }

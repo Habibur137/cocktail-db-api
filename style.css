@@ -1,0 +1,17 @@
+#root{
+    width: 1140px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+.cocktail-item{
+    padding: 10px;
+    border-radius: 10px;
+    background: linear-gradient(#111111, #ebdde9, #2b2c2c);
+    color:aliceblue;
+}
+.cocktail-item img{
+    width: 100%;
+    height: auto;
+}
